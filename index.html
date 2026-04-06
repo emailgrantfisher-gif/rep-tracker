@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rep Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rep Tracker</h1>
+
+    <div class="block">
+      <label for="exerciseSelect">Exercise</label>
+      <select id="exerciseSelect"></select>
+    </div>
+
+    <div class="block add-exercise">
+      <input type="text" id="newExerciseInput" placeholder="New exercise name" />
+      <button id="addExerciseBtn">Add Exercise</button>
+    </div>
+
+    <div class="block">
+      <button id="removeExerciseBtn" class="danger">Remove Selected Exercise</button>
+    </div>
+
+    <div class="block session-controls">
+      <button id="startSessionBtn">Start Session</button>
+      <button id="endSessionBtn" class="secondary" disabled>End Session</button>
+    </div>
+
+    <div class="block sequence-controls">
+      <button id="startSequenceBtn" disabled>Start Sequence</button>
+      <button id="endSequenceBtn" class="secondary" disabled>End Sequence</button>
+    </div>
+
+    <div class="block session-info">
+      <p>Date: <span id="sessionDate">—</span></p>
+      <p>Start: <span id="sessionStart">—</span></p>
+      <p>End: <span id="sessionEnd">—</span></p>
+    </div>
+
+    <div class="block rep-entry">
+      <input type="number" id="repInput" placeholder="Enter reps" min="1" disabled />
+      <button id="addRepBtn" disabled>Add Reps</button>
+    </div>
+
+    <div class="block">
+      <h3>Current Session Sequences</h3>
+      <div id="sequencesContainer"></div>
+    </div>
+
+    <div class="block">
+      <h3>Totals for the Day</h3>
+      <table id="dailyTotalsTable">
+        <thead>
+          <tr>
+            <th>Exercise</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="dailyTotalsBody"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

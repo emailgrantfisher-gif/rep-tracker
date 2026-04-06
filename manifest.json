@@ -1,0 +1,9 @@
+{
+  "name": "Rep Tracker",
+  "short_name": "Reps",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0078ff",
+  "icons": []
+}
