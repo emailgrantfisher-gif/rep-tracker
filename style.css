@@ -49,6 +49,9 @@ input[type="number"] {
 
 .add-exercise input {
   flex: 1;
+  height: 48px;
+  font-size: 18px;
+  padding: 12px 14px;
 }
 
 button {
